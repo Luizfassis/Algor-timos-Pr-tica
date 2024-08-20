@@ -29,3 +29,31 @@ média= (nota1+nota2+nota3)/3;
 printf("sua média é:%f",média);
 return(0); // voltar para inicio
 }
+------------------------------------
+// código sem média
+#include <stdio.h>
+#include <stdlib.h> // biblioteca
+int main(){
+float nota1, nota2, nota3;
+printf("digite sua primeira nota:");
+scanf("%f",& nota1);
+printf("digite sua segunda nota:");
+scanf("%f",& nota2);
+printf("digite sua terceira nota:");
+scanf("%f",& nota3);
+printf("sua média é:%f",(nota1+nota2+nota3)/3);
+return(0); // voltar para inicio
+}
+------------------------------------
+//exercicio1
+#include <stdio.h>
+#include <stdlib.h> // biblioteca
+int main(){
+float N1,N2,soma,sub,mult,div;
+printf("digite sua primeira numero1:");
+scanf("%f",& N1);
+printf("digite sua primeira numero2:");
+scanf("%f",& N2);
+
+return(0);
+}
