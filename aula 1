@@ -1,0 +1,31 @@
+//codigo inteiro
+#include <stdio.h>
+#include <stdlib.h> // biblioteca
+int main(){
+int nota1, nota2, nota3, média;
+printf("digite sua primeira nota:");
+scanf("%d",& nota1);
+printf("digite sua segunda nota:");
+scanf("%d",& nota2);
+printf("digite sua terceira nota:");
+scanf("%d",& nota3);
+média= (nota1+nota2+nota3)/3;
+printf("sua média é:%d,média");
+return(0); // voltar para inicio
+}
+----------------------------------
+// codigo float
+#include <stdio.h>
+#include <stdlib.h> // biblioteca
+int main(){
+float nota1, nota2, nota3, média;
+printf("digite sua primeira nota:");
+scanf("%f",& nota1);
+printf("digite sua segunda nota:");
+scanf("%f",& nota2);
+printf("digite sua terceira nota:");
+scanf("%f",& nota3);
+média= (nota1+nota2+nota3)/3;
+printf("sua média é:%f",média);
+return(0); // voltar para inicio
+}
