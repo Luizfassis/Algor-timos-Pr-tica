@@ -12,3 +12,26 @@ NÂO=not(negação)
 <=maior igual
 >=menor igual
 se=if
+----------------------------------------------------
+//code blocks
+#include <stdio.h>;
+#include <stdlib.h>;
+#include <math.h>;
+
+int main()
+{
+float nota1, nota2, nota3, media;
+    printf("digite sua primeira nota:");
+    scanf("%f",& nota1);
+    printf("digite sua segunda nota:");
+    scanf("%f",& nota2);
+    printf("digite sua terceira nota:");
+    scanf("%f",& nota3);
+    media = (nota1+nota2+nota3)/3;
+    printf("sua media:%f",media);
+if(media>=5){
+    printf("Parabens voce foi aprovado");}
+else{
+    printf("voce foi reprovado");}
+return(0);
+
