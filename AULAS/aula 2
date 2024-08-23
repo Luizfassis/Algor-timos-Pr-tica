@@ -1,0 +1,14 @@
+#include <math.h> //biblioteca para calculos
+=! diferente
+**exponenciação 
+SQR(//)=raiz quadrada
+MOD=RESTO DA DIVISÃO
+DIV=Quoeficiente
+E=and(precisa ser um e outro)
+OU=or(precisa ser um ou outro)
+NÂO=not(negação)
+<maior
+>menor
+<=maior igual
+>=menor igual
+se=if
