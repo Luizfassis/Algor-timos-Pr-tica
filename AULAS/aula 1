@@ -1,1 +1,66 @@
-
+//codigo inteiro
+#include <stdio.h>
+#include <stdlib.h> // biblioteca
+int main(){
+int nota1, nota2, nota3, média;
+printf("digite sua primeira nota:");
+scanf("%d",& nota1);
+printf("digite sua segunda nota:");
+scanf("%d",& nota2);
+printf("digite sua terceira nota:");
+scanf("%d",& nota3);
+média= (nota1+nota2+nota3)/3;
+printf("sua média é:%d,média");
+return(0); // voltar para inicio
+}
+----------------------------------
+// codigo float
+#include <stdio.h>
+#include <stdlib.h> // biblioteca
+int main(){
+float nota1, nota2, nota3, média;
+printf("digite sua primeira nota:");
+scanf("%f",& nota1);
+printf("digite sua segunda nota:");
+scanf("%f",& nota2);
+printf("digite sua terceira nota:");
+scanf("%f",& nota3);
+média= (nota1+nota2+nota3)/3;
+printf("sua média é:%f",média);
+return(0); // voltar para inicio
+}
+------------------------------------
+// código sem média
+#include <stdio.h>
+#include <stdlib.h> // biblioteca
+int main(){
+float nota1, nota2, nota3;
+printf("digite sua primeira nota:");
+scanf("%f",& nota1);
+printf("digite sua segunda nota:");
+scanf("%f",& nota2);
+printf("digite sua terceira nota:");
+scanf("%f",& nota3);
+printf("sua média é:%f",(nota1+nota2+nota3)/3);
+return(0); // voltar para inicio
+}
+------------------------------------
+// exercicio 1
+#include <stdio.h>
+#include <stdlib.h> // biblioteca
+int main(){
+float N1,N2,soma,sub,mult,divi;
+printf("digite sua primeira numero1:");
+scanf("%f",& N1);
+printf("digite sua primeira numero2:");
+scanf("%f",& N2);
+soma=(N1+N2);
+sub=(N1-N2);
+mult=(N1*N2);
+divi=(N1/N2);
+printf("sua soma deu:%.1f\n",soma);
+printf("sua subtração deu:%.1f\n",sub);
+printf("sua multiplicação deu:%.1f\n",mult);
+printf("sua divisão deu:%.1f\n",divi);
+return(0);
+}
