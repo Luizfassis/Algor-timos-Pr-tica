@@ -45,15 +45,22 @@ printf("sua média é:%f",(nota1+nota2+nota3)/3);
 return(0); // voltar para inicio
 }
 ------------------------------------
-//exercicio1
+// exercicio 1
 #include <stdio.h>
 #include <stdlib.h> // biblioteca
 int main(){
-float N1,N2,soma,sub,mult,div;
+float N1,N2,soma,sub,mult,divi;
 printf("digite sua primeira numero1:");
 scanf("%f",& N1);
 printf("digite sua primeira numero2:");
 scanf("%f",& N2);
-
+soma=(N1+N2);
+sub=(N1-N2);
+mult=(N1*N2);
+divi=(N1/N2);
+printf("sua soma deu:%.1f\n",soma);
+printf("sua subtração deu:%.1f\n",sub);
+printf("sua multiplicação deu:%.1f\n",mult);
+printf("sua divisão deu:%.1f\n",divi);
 return(0);
 }
