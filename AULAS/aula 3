@@ -20,15 +20,59 @@ refaz:
     scanf("%f",&faltas);
     aulas=60
 if(faltas>0.25*aulas){
-
+    printf("verdadeiro:%f");
+}
+else{
+    printf("falso:%f");
+}
 if (media>=5){
-  printf("Parabéns, você foi aprovado.Sua média é:%f",media);
+    printf("verdadeiro:%f");
+}
+else{
+     printf("falso:%f");
+}
+if(media && faltas == verdadeiro){
+  printf("Parabéns, você foi aprovado.Sua média e faltas é:%f,%f",media,faltas);
   printf(" Deseja calcular novamente?(S/N");
   scanf("%s",&opcao);}
-printf("digite o numero de faltas:");
-scanf("%f",&faltas);
-
-  
 if(opcao=="S"){
     goto refaz;
+}
+-------------------------------------------------------------------------------------------------
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+int main(){
+ float nota1,nota2,nota3,media,faltas,porc;
+ char opcao,true,false;
+ refaz:
+    printf("digite a nota1:");
+    scanf("%f",& nota1);
+    printf("digite a nota2:");
+    scanf("%f",& nota2);
+    printf("digite a nota3:");
+    scanf("%f",& nota3);
+    media=(nota1+nota2+nota3)/3;
+    printf("digite o numero de faltas:");
+    scanf("%f",&faltas);
+    porc=faltas/60;
+
+
+if(porc>0.25){
+    printf("reprovado por falta\n");
+}
+else{
+    if (media>=5){
+    printf("aprovado por faltas e media:%f"
+
+}
+
+  printf(" Deseja calcular novamente?(S/N):");
+  scanf("%s",&opcao);
+if(opcao=="S"){
+    goto refaz;
+}
+
+return 0;
 }
