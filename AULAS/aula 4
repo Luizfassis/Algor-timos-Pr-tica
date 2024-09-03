@@ -1,1 +1,25 @@
-
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+float N1,N2;
+char operador;
+printf("digite seus numeros e operador:");
+scanf("%f%f",&N1,&N2);
+printf("digite seus numeros e operador:");
+scanf("%s", &operador);
+switch (operador) {
+case'+':
+printf("sua soma deu:%.1f\n",N1+N2);
+break;
+case '-':
+printf("sua subtração deu:%.1f\n",N1-N2);
+break;
+case '*':
+printf("sua multiplicação deu:%.1f\n",N1*N2);
+break;
+case '/':
+printf("sua divisão deu:%.1f\n",N1/N2);
+break;
+}
+return 0;
+}
