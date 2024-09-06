@@ -1,1 +1,35 @@
-3
+-------------------------------------------------------------------------------------------------------------------------
+ex1
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+double nota_trab,aval_sem,exame,media;
+    printf("digite a nota do trabalho em laboratório: ");
+    scanf("%lf",&nota_trab);
+    printf("digite a nota do avliaçao semestral: ");
+    scanf("%lf",&nota_trab);
+    printf("digite a nota do exame final: ");
+    scanf("%lf",&nota_trab);
+    media = (((nota_trab*2)+(aval_sem*3)+(exame*5)/10));
+    printf("sua media e:%.2lf\n",media);
+if (media>=8&&media<=10){
+        printf("conceito A");
+}
+    else if(media<8&&media>=7){
+        printf("conceito B");
+    }
+    else if(media<7&&media>=6){
+        printf("conceito C");
+    }
+    else if(media<6&&media>=5){
+        printf("conceito D");
+    }
+    else if(media<5&&media>=0){
+        printf("conceito E");
+    }
+    else{
+        printf("error");
+    }
+}
+
