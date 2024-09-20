@@ -1,1 +1,43 @@
+------------------------------------------------------------------------------------------------------
+ex1 -
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+    setlocale(LC_ALL, "Portuguese");
+int a,b=10, i;
+while(a<b);
+do {
+printf("Escolha uma opção:\n");
+printf("1= Opção 1\n");
+printf("2= Opção 2\n");
+printf("3= Opção 3\n");
+scanf("%d", &i);
+if(i<1 || i>3){
+printf("Opção invalida!, Escolha uma das opções abaixo!\n");
+}
+}while((i<1) || (i>3));
+switch (i) {
+case 1:
+printf("Produto: Caneta\n");
+printf("Preco: R$ 2.50\n");
+printf("Especificacao: Caneta esferografica azul, escrita suave.\n");
+break;
+case 2:
+printf("Produto: Borracha\n");
+printf("Preco: R$ 1.00\n");
+printf("Especificacao: Borracha branca, apaga lapis sem manchas.\n");
+break;
+case 3:
+printf("Produto: Apontador\n");
+printf("Preco: R$ 1.75\n");
+printf("Especificacao: Apontador de plastico com deposito, cores variadas.\n");
+break;
+default:
+printf("Erro: Produto invalido.\n");
+break;
+}
+return 0;
+}
 
