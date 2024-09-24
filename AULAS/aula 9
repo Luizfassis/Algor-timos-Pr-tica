@@ -17,3 +17,24 @@ return 0;
 }
 -------------------------------------------------------------------------------------------------------------
 ex3
+#include <stdio.h>;
+#include <stdlib.h>;
+#include <math.h>;
+
+int main(){
+    float nota1,nota2,media,alunos,i;
+      printf("Digite a quantidade de alunos: ");
+      scanf("%f",&alunos);
+    for(i=1; i<=alunos; i++){
+    printf("digite suas notas:");
+    scanf("%f,%f",&nota1,&nota2);
+    media = (nota1+nota2)/2;
+    printf("sua media:%f\n",media);
+if(media>=5){
+    printf("Parabens voce foi aprovado aluno/a %.1f\n",i);}
+else{
+    printf("voce foi reprovado aluno/a %.1f\n",i);}}
+return 0;
+}
+-----------------------------------------------------------------------------------------------------------
+ex4
