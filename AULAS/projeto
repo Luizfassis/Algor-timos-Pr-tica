@@ -5,34 +5,44 @@ char funcionario[1][50];
 char cliente[1][50];
 char senhasf[1][20];
 char senhasc[1][20];
-char pessoas;
+char nome,senha;
 int i;
-cliente==('connor');
+cliente==('cornnor');
 senhasc==('mulher');
 funcionario==('stefanny');
 senhasf==('ladygp');
-    printf("digite se for cliente(c) ou funcionario(f): \n");
-    scanf("%c",&pessoas);
-if (pessoas=='c'){
-    printf("vc escolheu cliente\n");
-printf("Digite seu nome: ");
-fgets(cliente[i], 50, stdin);
-cliente[i][strcspn(cliente[i], "\n")] = 0;
-printf("Digite a senha: ");
-fgets(senhasc[i], 20, stdin);
-printf("\n");
+printf("Digite seu nome: \n");
+scanf("%s",&nome);
+printf("Digite a senha: \n");
+scanf("%s",&senha);
+if(nome==cliente&&senha==senhasc){
+    printf("Bem vindo cornnor\n");
+    do {
+printf("Escolha uma opção:\n");
+printf("(1) Opção 1\n");
+printf("(2) Opção 2\n");
+printf("(3) Opção 3\n");
+scanf("%d", &i);
+if(i<1 || i>3){
+printf("Opção invalida!, Escolha uma das opções abaixo!\n");
 }
-else if(pessoas=='f') {
-    printf("vc escolheu funcionario");
-    for(i = 0; i < 2; i++) {
-printf("Cadastro da funcionario %d\n", i + 1);
-printf("Digite o nome: ");
-fgets(funcionario[i], 50, stdin);
-funcionario[i][strcspn(funcionario[i], "\n")] = 0;
-printf("Digite a senha: ");
-fgets(senhasf[i], 20, stdin);
-printf("\n");
+}while((i<1) || (i>3));
+printf("Você escolheu a opção %d\n", i);
 }
+else if (nome==funcionario&&senha==senhasf){
+    printf("Bem vinda stefanny\n");
+    do {
+printf("Escolha uma opção:\n");
+printf("(1) Opção 1\n");
+printf("(2) Opção 2\n");
+printf("(3) Opção 3\n");
+scanf("%d", &i);
+if(i<1 || i>3){
+printf("Opção invalida!, Escolha uma das opções abaixo!\n");
+}
+}while((i<1) || (i>3));
+printf("Você escolheu a opção %d\n", i);
+}+
 }
 return 0;
 }
