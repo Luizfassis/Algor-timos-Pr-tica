@@ -1,48 +1,50 @@
 #include <stdio.h>
 #include <string.h>
+cliente='cornnor';
+c='mulher';
+funcionario='stefanny';
+f='ladygp';
 int main() {
 char funcionario[1][50];
 char cliente[1][50];
 char senhasf[1][20];
 char senhasc[1][20];
 char nome,senha;
-int i;
-cliente==('cornnor');
-senhasc==('mulher');
-funcionario==('stefanny');
-senhasf==('ladygp');
+int i,a;
 printf("Digite seu nome: \n");
 scanf("%s",&nome);
 printf("Digite a senha: \n");
 scanf("%s",&senha);
-if(nome==cliente&&senha==senhasc){
-    printf("Bem vindo cornnor\n");
+if (senha='ladygp'){
+    printf("Bem Vinda stefanny\n");
+    do {
+printf("Escolha uma opção:\n");
+printf("(1) Opção 1\n");
+printf("(2) Opção 2\n");
+printf("(3) Opção 3\n");
+scanf("%d", &a);
+if(a>1 || a<3){
+printf("Opção invalida!, Escolha uma das opções abaixo!\n");
+}
+}while((a<1) || (a>3));{
+printf("Você escolheu a opção %d\n", a);
+}}
+else if(senha='mulher'){
+    printf("Bem Vindo cornnor\n");
     do {
 printf("Escolha uma opção:\n");
 printf("(1) Opção 1\n");
 printf("(2) Opção 2\n");
 printf("(3) Opção 3\n");
 scanf("%d", &i);
-if(i<1 || i>3){
+if(i>1 || i<3){
 printf("Opção invalida!, Escolha uma das opções abaixo!\n");
 }
-}while((i<1) || (i>3));
+}while((i<1) || (i>3));{
 printf("Você escolheu a opção %d\n", i);
-}
-else if (nome==funcionario&&senha==senhasf){
-    printf("Bem vinda stefanny\n");
-    do {
-printf("Escolha uma opção:\n");
-printf("(1) Opção 1\n");
-printf("(2) Opção 2\n");
-printf("(3) Opção 3\n");
-scanf("%d", &i);
-if(i<1 || i>3){
-printf("Opção invalida!, Escolha uma das opções abaixo!\n");
-}
-}while((i<1) || (i>3));
-printf("Você escolheu a opção %d\n", i);
-}+
+}}
+else{
+    printf("não faz sentido/n");
 }
 return 0;
 }
