@@ -1,50 +1,57 @@
 #include <stdio.h>
 #include <string.h>
-cliente='cornnor';
-c='mulher';
-funcionario='stefanny';
-f='ladygp';
 int main() {
-char funcionario[1][50];
-char cliente[1][50];
-char senhasf[1][20];
-char senhasc[1][20];
-char nome,senha;
-int i,a;
+char cliente[50];
+char nome[20];
+char senha[20];
+int i,a,tel,e;
+refaz:
 printf("Digite seu nome: \n");
-scanf("%s",&nome);
+fgets(nome, sizeof(nome), stdin);
 printf("Digite a senha: \n");
-scanf("%s",&senha);
-if (senha='ladygp'){
+fgets(senha, sizeof(senha), stdin);
+if (strcmp(senha, "ladygp\n") == 0){
     printf("Bem Vinda stefanny\n");
+    printf("digite o nome do seu cliente: ");
+    fgets(cliente, sizeof(cliente), stdin);
+    printf("digite o numero de telefone do cliente:");
+    scanf("%d",&tel);
     do {
-printf("Escolha uma opção:\n");
-printf("(1) Opção 1\n");
-printf("(2) Opção 2\n");
-printf("(3) Opção 3\n");
+printf("Menu de Produtos:\n");
+printf("1. Carro1\n");
+printf("2. Carro2\n");
+printf("3. Carro3\n");
+printf("4. Carro4\n");
+printf("5. Carro5\n");
+printf("6. Carro6\n");
+printf("Escolha um produto (1-6): ");
 scanf("%d", &a);
-if(a>1 || a<3){
+if(a<1 || a>6){
 printf("Opção invalida!, Escolha uma das opções abaixo!\n");
-}
-}while((a<1) || (a>3));{
+}}
+while((a<1) || (a>6));{
 printf("Você escolheu a opção %d\n", a);
-}}
-else if(senha='mulher'){
-    printf("Bem Vindo cornnor\n");
-    do {
-printf("Escolha uma opção:\n");
-printf("(1) Opção 1\n");
-printf("(2) Opção 2\n");
-printf("(3) Opção 3\n");
-scanf("%d", &i);
-if(i>1 || i<3){
-printf("Opção invalida!, Escolha uma das opções abaixo!\n");
+if(a==1) {
+printf("Produto:  Carro1\n");
+printf("Preco: R$ 2000\n");
+printf("Menu de cor:\n");
+printf("1. branco\n");
+printf("2. preto\n");
+printf("3. cinza\n");
+printf("escolha cor:");
+scanf("d",&e);
+while((e<1) || (e>3));{
+if (e==1){
+    
 }
-}while((i<1) || (i>3));{
-printf("Você escolheu a opção %d\n", i);
-}}
+}
+}
+
+}
+}
 else{
-    printf("não faz sentido/n");
+    printf("senha incorreta /n");
+    goto refaz;
 }
 return 0;
 }
