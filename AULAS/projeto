@@ -263,9 +263,23 @@ break;
     }
     else {
     printf("Erro: Forma de pagamento inválida.\n");
-    }
+    }}
     else{
         printf("senha incorreta\n");
     }
+    FILE*projeto=fopen("saida.txt","w");
+    if(projeto==NULL){
+        printf("erro ao abrir arquivo\n");
+    }
+    fprintf(projeto,"nome do cliente:Lucas Godoy\n");
+    fprintf(projeto,"numero:19999999999\n");
+    fprintf(projeto,"nome do cliente:Mariane Cristina\n");
+    fprintf(projeto,"numero:19988888888\n");
+    fprintf(projeto,"nome do cliente:Brian Cornnor\n");
+    fprintf(projeto,"numero:19977777777\n");
+    fprintf(projeto,"nome do cliente:%s\n",cliente);
+    fprintf(projeto,"numero:%d\n",tel);
+    fclose(projeto);
+
     return 0;
 }
